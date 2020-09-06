@@ -1,0 +1,70 @@
+@mixin background($url) {
+    background: url($url);
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    .scroll-space {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-family: sans-serif;
+            font-size: 3em;
+            color: rgb(8, 11, 66);
+        }
+    }
+    .io-content {
+        background: rgb(187, 187, 187);
+        // height: 100vh;
+        padding: 10px;
+        .io-content-container {
+            height: 100%;
+            width: 60%;
+            margin: 0 auto;
+            .io-element {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                margin: 20px 0;
+                transition: all 2s ease;
+                opacity: 0;
+                .image {
+                    width: 500px;
+                    height: 500px;
+                    flex-basis: 50%;
+                }
+                .image-1 {
+                    @include background("../images/img1.jpg");
+                }
+                .image-2 {
+                    @include background("../images/img2.jpg");
+                }
+                .image-3 {
+                    @include background("../images/img3.jpg");
+                }
+                .image-4 {
+                    @include background("../images/img4.jpg");
+                }
+                .image-5 {
+                    @include background("../images/img5.jpg");
+                }
+                .image-6 {
+                    @include background("../images/img6.jpg");
+                }
+                .description {
+                    flex-basis: 50%;
+                    padding: 20px;
+                    font-family: sans-serif;
+                }
+            }
+            .reverse {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}

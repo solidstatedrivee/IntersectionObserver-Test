@@ -1,0 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+body .scroll-space {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .scroll-space h1 {
+  font-family: sans-serif;
+  font-size: 3em;
+  color: #080b42;
+}
+body .io-content {
+  background: #bbbbbb;
+  padding: 10px;
+}
+body .io-content .io-content-container {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+}
+body .io-content .io-content-container .io-element {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0;
+  transition: all 2s ease;
+  opacity: 0;
+}
+body .io-content .io-content-container .io-element .image {
+  width: 500px;
+  height: 500px;
+  flex-basis: 50%;
+}
+body .io-content .io-content-container .io-element .image-1 {
+  background: url("../images/img1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body .io-content .io-content-container .io-element .image-2 {
+  background: url("../images/img2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body .io-content .io-content-container .io-element .image-3 {
+  background: url("../images/img3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body .io-content .io-content-container .io-element .image-4 {
+  background: url("../images/img4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body .io-content .io-content-container .io-element .image-5 {
+  background: url("../images/img5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body .io-content .io-content-container .io-element .image-6 {
+  background: url("../images/img6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body .io-content .io-content-container .io-element .description {
+  flex-basis: 50%;
+  padding: 20px;
+  font-family: sans-serif;
+}
+body .io-content .io-content-container .reverse {
+  flex-direction: row-reverse;
+}
+
+/*# sourceMappingURL=styles.css.map */
